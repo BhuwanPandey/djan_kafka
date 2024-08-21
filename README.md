@@ -53,12 +53,12 @@ PRIVATE_IP=
 ```
 #### Run extra service with Docker
 
-6. Setup Zookeeper
+7. Setup Zookeeper
 Zookeeper is an essential component in distributed systems, particularly when working with Apache Kafka.
 ```
 docker run --rm --name kafka-zookeeper -p 2181:2181 zookeeper
 ```
-7. Setup Kafka
+8. Setup Kafka
 Kafka is commonly used for building real-time data pipelines, stream processing applications, and event-driven systems, handling large volumes of data across multiple sources with reliability and scalability.
 ```
  docker run -p 9092:9092 --rm --name kafka-server \
@@ -68,17 +68,17 @@ Kafka is commonly used for building real-time data pipelines, stream processing 
  confluentinc/cp-kafka
 ```
 
-8. Run the django server
+9. Run the django server
 ```
 python manage.py runserver
 ```
 
-9. Run the kafka producer
+10. Run the kafka producer
 ```
 python kafka_producer.py
 ```
 
-10. Run the kafka consumer
+11. Run the kafka consumer
 ```
 python manage.py consume_kafka  or
 python manage.py consume_kafka 100  ( this will store 100 records on DB)
