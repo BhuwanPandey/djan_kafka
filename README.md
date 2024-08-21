@@ -6,6 +6,7 @@ Tech Stack:
 * Docker
 * Zookeeper (where kafka depends on)
 * Apache Kafka
+* Window 11 (System)
 
 ## Project Setup Instructions
 
