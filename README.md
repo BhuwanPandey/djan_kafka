@@ -83,3 +83,9 @@ python kafka_producer.py
 python manage.py consume_kafka  or
 python manage.py consume_kafka 100  ( this will store 100 records on DB)
 ```
+
+12. Visit below to get list of records 
+```
+http://127.0.0.1:8000/api/face_embed/
+```
+
